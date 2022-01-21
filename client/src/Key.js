@@ -1,7 +1,7 @@
-
+import React from 'react';
 
 const Key = ({letter, color}) => {
-  return <div style={{backgroundColor: color}}>
+  return <div className="key" style={{backgroundColor: color} }>
       {letter}
   </div>;
 };
