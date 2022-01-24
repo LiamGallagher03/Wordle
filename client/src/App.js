@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import './App.css'
 import Keyboard from './Keyboard';
 import Board from './Board';
@@ -13,17 +13,14 @@ function App() {
       color: "lightgrey"
     }))
   const [letters, setLetters] = useState(alphaArr)
-  return (
-    <div className="App">
-      <header>
-        <h1>Wordle</h1>
-      </header>
-      <Board letters={letters}/>
-      <Keyboard letters={letters}/>
-    </div>
-  );
+  return <div className="App">
+    <header>
+      <h1>Wordle</h1>
+    </header>
+    <Board letters={letters} setLetters={setLetters} />
+    <Keyboard letters={letters} />
+  </div>
+
 }
 
 export default App;
-
-
