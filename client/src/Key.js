@@ -1,7 +1,10 @@
 import React from 'react';
 
 const Key = ({letter, color}) => {
-  return <div className="key" style={{backgroundColor: color} }>
+  const onKeyPress = () => {
+    
+  }
+  return <div style={{backgroundColor: color} }>
       {letter}
   </div>;
 };

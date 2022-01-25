@@ -13,6 +13,7 @@ function App() {
       color: "lightgrey"
     }))
   const [letters, setLetters] = useState(alphaArr)
+<<<<<<< Updated upstream
   return (
     <div className="App">
       <header>
@@ -21,6 +22,17 @@ function App() {
       <Board letters={letters}/>
       <Keyboard letters={letters}/>
     </div>
+=======
+  const [newLetter, setNewLetter] = useState()
+
+  return (<div className="App">
+    <header>
+      <h1>Wordle</h1>
+    </header>
+    <Board letters={letters} setLetters={setLetters} newLetter={newLetter} />
+    <Keyboard letters={letters} setNewLetter={setNewLetter} />
+  </div>
+>>>>>>> Stashed changes
   );
 }
 
