@@ -1,15 +1,14 @@
 import Key from './Key'
 import React from 'react';
 
-const Keyboard = ({letters}) => {
+const Keyboard = ({letters, setNewLetter}) => {
 
   return (<div>
     {letters.map(l => 
       <Key letter={l.letter} 
-      color={l.color}/>
+      color={l.color}
+      newLetter={l.setNewLetter}/>
       )}
-      <Key letter="A" color="grey"/>
-      <Key letter="B" color="green"/>
   </div>);
 };
 
