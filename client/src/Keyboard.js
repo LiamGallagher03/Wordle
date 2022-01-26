@@ -1,17 +1,19 @@
-import Key from './Key'
 import React from 'react';
-
+import Key from './Key'
+//rafce
 const Keyboard = ({letters, setNewLetter, setNewGuess, guess}) => {
-
-  return (<div>
-    {letters.map(l => 
-      <Key letter={l.letter} 
-      color={l.color}
-      newLetter={l.setNewLetter}
-      setNewGuess={setNewGuess}
-      guess={guess}/>
+  
+  return <div>
+      {letters.map(l => 
+        <Key
+            letter={l.letter}
+            color={l.color}
+            setNewLetter={setNewLetter}
+            setNewGuess={setNewGuess}
+            guess={guess}
+        />
       )}
-  </div>);
+  </div>;
 };
 
 export default Keyboard;
