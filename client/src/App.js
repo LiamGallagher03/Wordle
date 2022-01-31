@@ -1,5 +1,6 @@
 import Keyboard from './Keyboard'
 import Board from './Board'
+import './App.css'
 import React, {useState} from 'react'
 
 function App() {

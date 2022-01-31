@@ -1,5 +1,32 @@
+.Keyboard {
+  background-color: #333;
+  width: 45%;
+  height: 20%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 5px;
+}
+
+.Cell {
+  width: 3rem;
+  padding: 0.5rem;
+  margin: 0.25rem;
+  border: 1px solid black;
+}
+
+.Key {
+  width: 3rem;
+  margin: 5px;
+}
+
 .App {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: x-large;
 }
 
 .App-logo {
